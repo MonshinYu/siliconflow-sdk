@@ -1,0 +1,46 @@
+# dependencies
+node_modules/
+
+# 包管理器锁文件（统一忽略，避免多包管理器混用时互相干扰）
+package-lock.json
+npm-shrinkwrap.json
+yarn.lock
+bun.lock
+bun.lockb
+pnpm-lock.yaml
+
+# build output
+dist/
+out/
+
+# npm publish artifacts
+*.tgz
+*.tsbuildinfo
+
+# logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+bun-debug.log*
+
+# coverage
+coverage/
+*.lcov
+
+# env files（含 API Key）
+.env
+.env.*
+!.env.example
+
+# caches
+.eslintcache
+.cache/
+
+# editor / IDE
+.idea/
+.vscode/
+
+# OS
+.DS_Store

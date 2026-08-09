@@ -1,0 +1,49 @@
+{
+  "name": "siliconflow-sdk",
+  "version": "0.1.0",
+  "description": "SiliconFlow 云平台 TypeScript SDK：对话补全（流式/非流式）与文生图/图生图，OpenAI 兼容协议",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist"
+  ],
+  "sideEffects": false,
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "tsup",
+    "typecheck": "tsc --noEmit",
+    "prepack": "npm run typecheck && npm run build"
+  },
+  "keywords": [
+    "siliconflow",
+    "deepseek",
+    "qwen",
+    "kimi",
+    "glm",
+    "llm",
+    "sdk",
+    "openai"
+  ],
+  "license": "MIT",
+  "peerDependencies": {
+    "openai": "^7.4.0"
+  },
+  "devDependencies": {
+    "@types/node": "^26.2.0",
+    "openai": "^7.4.0",
+    "tsup": "^8.5.1",
+    "typescript": "^5.9.0"
+  }
+}
