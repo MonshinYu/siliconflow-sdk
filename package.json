@@ -1,7 +1,7 @@
 {
   "name": "siliconflow-sdk",
-  "version": "0.1.0",
-  "description": "SiliconFlow 云平台 TypeScript SDK：对话补全（流式/非流式）与文生图/图生图，OpenAI 兼容协议",
+  "version": "0.2.0",
+  "description": "SiliconFlow 云平台 TypeScript SDK：对话/嵌入/重排/图像/音频(TTS/ASR/语音克隆)/视频/文件/批量/FIM，OpenAI 兼容协议",
   "type": "module",
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",
@@ -24,6 +24,7 @@
   "scripts": {
     "build": "tsup",
     "typecheck": "tsc --noEmit",
+    "smoke": "bun run scripts/smoke.ts",
     "prepack": "npm run typecheck && npm run build"
   },
   "keywords": [

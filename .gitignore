@@ -13,6 +13,9 @@ pnpm-lock.yaml
 dist/
 out/
 
+# smoke 实测产物
+scripts/.out/
+
 # npm publish artifacts
 *.tgz
 *.tsbuildinfo
